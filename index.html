@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Alta de Persona</h1>
+    <form action="guardar.php" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required><br>
+        <input type="text" name="apellido" placeholder="Apellido" required><br>
+        <input type="email" name="email" placeholder="Correo electrónico" required><br>
+        <input type="text" name="telefono" placeholder="Teléfono"><br>
+        <input type="date" name="fecha_nacimiento"><br>
+        <button type="submit">Guardar</button>
+    </form>
+    <a href="listar.php">Ver listado</a>
+</body>
+</html>
