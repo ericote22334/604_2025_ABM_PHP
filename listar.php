@@ -1,5 +1,5 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "proyecto_basico");
+include 'conexion.php';
 
 $personas = $conexion->query("SELECT * FROM personas");
 ?>
@@ -12,7 +12,7 @@ $personas = $conexion->query("SELECT * FROM personas");
 </head>
 <body>
     <h1>Personas Registradas</h1>
-    <a href="formulario.html">Nueva Persona</a>
+    <a href="index.html">Nueva Persona</a>
     <table>
         <tr>
             <th>Nombre</th><th>Apellido</th><th>Email</th><th>Teléfono</th><th>Fecha Nac.</th><th>Acciones</th>

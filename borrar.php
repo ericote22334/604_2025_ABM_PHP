@@ -1,5 +1,5 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "proyecto_basico");
+include 'conexion.php';
 $id = $_GET['id'];
 $conexion->query("DELETE FROM personas WHERE id=$id");
 header("Location: listar.php");

@@ -1,5 +1,5 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "proyecto_basico");
+include 'conexion.php';
 
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);

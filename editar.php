@@ -1,5 +1,5 @@
-<?php 
-$conexion = new mysqli("localhost", "root", "", "proyecto_basico");
+<?php
+include 'conexion.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $id = $_POST['id'];
@@ -18,7 +18,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     header("Location: listar.php");
     exit;
 }
-
 $id = $_GET['id'];
 $persona = $conexion->query("SELECT * FROM personas WHERE id=$id")->fetch_assoc();
 ?>
